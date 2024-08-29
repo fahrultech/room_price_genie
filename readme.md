@@ -38,15 +38,15 @@ POSTGRES_HOST=db
 POSTGRES_PORT=5432
 ```
 
+### Run the app
+```
+docker compose up --build
+```
+
 ### Testing
 For unit test use below command:
 ```
 docker compose exec web pytest
-```
-
-### Run the app
-```
-docker compose up --build
 ```
 
 ### Access the api
