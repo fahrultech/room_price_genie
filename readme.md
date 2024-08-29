@@ -25,6 +25,18 @@ request parameters).
 
 ## Usage
 
+## Cloning the app
+
+### Using Unix System
+```
+git clone git@github.com:fahrultech/room_price_genie.git
+```
+
+### Using Window System
+```
+git clone git@github.com:fahrultech/room_price_genie.git --config core.autocrlf=input
+```
+
 ### Env Variables
 Create .env file in the root and add the following
 
