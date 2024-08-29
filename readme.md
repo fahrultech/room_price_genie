@@ -43,6 +43,25 @@ POSTGRES_PORT=5432
 docker compose up --build
 ```
 
+### Database
+After running docker this app already include the command to insert data to database
+```
+#!/bin/sh
+
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+# Run migrations
+echo "Running migrations..."
+python manage.py makemigrations
+python manage.py migrate
+python manage.py load_data_from_csv
+
+# Start the server
+echo "Starting the web server..."
+exec "$@"
+```
+
 ### Testing
 For unit test use below command:
 ```
